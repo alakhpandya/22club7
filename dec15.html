@@ -31,15 +31,64 @@
             Select color for your T-shirt: <input type="color" name="tshirt-color" id="">
         </div>
 
+        <!-- dec21 work -->
+        <div>
+            Date of departure: <input type="date" name="" id="">
+            Time of departure: <input type="time" name="" id="">
+        </div>
+        <div>
+            Date & Time of arrival: <input type="datetime-local" name="" id="">
+            <!-- <input type="datetime" name="" id=""> -->
+            Duration of stay: <input type="week" name="" id="">
+        </div>
+        <div>
+            Upload your photo: <input type="file" name="" id="">
+        </div>
+        <br>
+        <div>
+            <p>How did you come to know about us?</p>
+            <input type="checkbox" name="" id=""> Newspapers <br>
+            <input type="checkbox" name="" id=""> Social Media <br>
+            <input type="checkbox" name="" id=""> From a friend <br>
+            <input onclick="document.getElementById('hidden').type = 'text'" type="checkbox" name="" id=""> Other 
+            <input id="hidden" type="hidden" name="" placeholder="Please specify...">
+        </div>
+        <div>
+            Month & Year of passing: <input type="month" name="" id="">
+        </div>
+        <div>
+            Adults: <input min="1" max="6" type="number" name="" id=""> <br>
+            Children: <input min="0" max="6" type="number" name="" id=""> <br>
+            Infants: <input min="0" max="6" type="number" name="" id="">
+        </div>
+        <div>
+            Mode of payment: <br>
+            <input type="radio" name="mode_of_payment" id="cod"> <label for="cod">Cash of delivery</label>
+            <input type="radio" name="mode_of_payment" id="netbanking"> <label for="netbanking">Netbanking</label>
+            <input type="radio" name="mode_of_payment" id="cc"> <label for="cc">Credit/Debit Cards</label>
+            <input type="radio" name="mode_of_payment" id="upi"> <label for="upi">UPI</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+            <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+            <input type="radio" name="gender" id="other"> <label for="other">Others</label>
+        </div>
+        <br>
+        <div>
+            <!-- Choose your budget:
+            <input min="10000" max="20000" type="range" name="budget" id=""> -->
 
-
-
+            <input type="range" step="1000" value="20000" min="10000" max="30000" oninput="this.nextElementSibling.value = this.value">
+            <output>20000</output>
+        </div>
+        
+        <br>
         <div>
             <input autofocus type="checkbox" name="" required id="tnc">
             <label for="tnc">I agree to the terms of use.</label>
         </div>
         <div>
-            <input type="checkbox" name="" checked id="whatsapp">
+            <input type="checkbox"  name="" checked id="whatsapp">
             <label for="whatsapp">Send me offers on whatsapp.</label>
         </div>
         <div>
