@@ -1,0 +1,23 @@
+/* Corinthia */
+@font-face{
+    font-family: "cursive handwriting";
+    src: url('/fonts/Corinthia/Corinthia-Regular.ttf');
+}
+
+/* EDU */
+@font-face {
+    font-family: beautiful-text;
+    src: url('/fonts/Edu_VIC_WA_NT_Beginner/EduVICWANTBeginner-VariableFont_wght.ttf');
+}
+
+/* Megrim */
+@font-face {
+    font-family: megrim;
+    src: url('/fonts/Megrim/Megrim-Regular.ttf');
+}
+
+/* Sunrise */
+@font-face {
+    font-family: 'Sunrise';
+    src: url('/fonts/Waiting_for_the_Sunrise/WaitingfortheSunrise-Regular.ttf');
+}
