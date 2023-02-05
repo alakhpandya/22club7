@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('/jan12_fonts.css');
+    body{
+        background-color: beige;
+        font-family: beautiful-text;
+    }
+    h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    p{
+        font-size: 1.5rem;
+        line-height: 1.8em;
+    }
+    a{
+        text-decoration: none;
+        position: relative;
+    }
+    a:hover::after{
+        content: attr(data-tool-tip);
+        background-color: black;
+        color: beige;
+        padding: 0 0.7em;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        white-space: nowrap;
+    }
+
+    .form-container{
+        text-align: center;
+    }
+
+    .req::after{
+        content: "*";
+        color: red;
+        font-size: 1.5em;
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nesciunt suscipit neque aliquam.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur <a data-tool-tip="Subscribe to our youtube channel" href="#">adipisicing elit.</a> Quidem, impedit error laborum voluptatibus a excepturi ipsam consequuntur corrupti nobis quaerat repellendus tempore earum animi, quae neque saepe tempora sequi sint, accusamus perspiciatis aperiam? Magni temporibus tenetur, ducimus quaerat unde cumque. Incidunt placeat debitis beatae, ducimus quibusdam dolores at eveniet cupiditate nam temporibus atque numquam est iure voluptatibus aut facilis quia quo repellat sint maiores? Velit magnam animi dolore! Nobis, voluptatum animi similique alias id illum iste ad aut molestiae! Ut magnam delectus laboriosam <a data-tool-tip="Follow us on twitter" href="#">quaerat culpa eaque</a>? Quo nam consequatur placeat, impedit facilis natus harum autem inventore quam ipsa quia iure modi quidem voluptatem dolores necessitatibus, minima maxime, voluptatibus nihil. Rerum ex velit ipsum distinctio reprehenderit aspernatur, blanditiis tenetur, impedit necessitatibus reiciendis voluptatem nam quis assumenda laboriosam modi ipsa cumque hic ab, unde molestias! <a data-tool-tip="Like our facebook page" href="#">Distinctio assumenda</a> iure nostrum. Vel tempore amet modi dolorem eius maxime repudiandae? Impedit iure tempore itaque voluptate eos, autem temporibus esse aliquam obcaecati harum voluptatem, voluptates est odit sed laboriosam eveniet saepe sint doloremque? Unde repellat explicabo molestias fugiat dolorem libero nam. Explicabo maiores quos officiis eos deleniti labore sed, aliquam rerum veniam odit totam <a data-tool-tip="Contribute us through google pay" href="#">quae provident non</a>, blanditiis libero omnis. Id incidunt eum non nihil autem.</p>
+
+    <div class="form-container">
+        <form action="">
+            <div>
+                <label for="">Full Name: </label>
+                <input type="text" name="" id="">
+            </div> <br>
+            <div>
+                <label class="req" for="">E-mail:</label>
+                <input type="email" name="" id="">
+            </div> <br>
+            <div>
+                <label class="req" for="">Password:</label>
+                <input type="password" name="" id="">
+            </div> <br>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

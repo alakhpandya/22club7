@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* height & width can't be applied on inline elements except <img> & <button> */
+    #link1{
+        background-color: royalblue;
+        color: white;
+        text-decoration: none;
+        width: 200px;
+        height: 100px;
+    }
+    img {
+        /* 
+        vh: height of the viewport
+        vw: width of the viewport
+        */
+        /* width: 90vw; */
+        /* width: 80vw; */
+        /* height: 100vh; */
+
+        width: 90%;
+    }
+    .img-box{
+        border: 4px solid blue;
+        width: 1000px;
+    }
+
+    .outer-box{
+        border: 3px solid red;
+        width: 90%;
+        height: 500px;
+        /* background-color: greenyellow; */
+        background: url('/photos/pexels-tobias-bjørkli-1900203.jpg') center/cover;
+    }
+    .inner-box{
+        border: 3px solid blue;
+        width: 90%;
+        height: 90%;
+        /* background-color: blueviolet; */
+        /* background-color: rgb(32, 8, 211); */
+        background-color: rgba(32, 8, 211, 0.4);
+    }
+</style>
+
+<body>
+    <!-- <div class="img-box">
+        <img src="/photos/pexels-tobias-bjørkli-1900203.jpg" alt="">
+    </div> -->
+    <a id="link1" href="#">Link 1</a>
+    <div class="outer-box">
+        <div class="inner-box">
+
+        </div>
+    </div>
+</body>
+
+</html>

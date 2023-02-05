@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Pseudo Elements: before & after */
+    /* 
+    Pseudo elements work only when we provide 'content'
+    
+    Pseudo elements don't go before & after the target element. The stay inside the target element but the just go before/after the content of the target element.
+    
+    Pseudo elements cannot work with empty tags.
+    */
+
+    h1{
+        text-align: center;
+    }
+
+    h1::before{
+        content: "I";
+        background-color: orangered;
+        display: block;
+    }
+    h1::after{
+        content: "India";
+        background-color: green;
+        display: block;
+    }
+
+    /* .before{
+        background-color: orangered;
+    }
+    .after{
+        background-color: green;
+    } */
+
+    /* .main-title::before{
+        content: "We";
+        color: white;
+    } */
+</style>
+<body>
+    <h1 class="main-title">Love</h1>
+    <!-- <h1><span class="before">I</span>Love<span class="after">India</span></h1> -->
+
+    <!-- <img src="" alt=""> -->
+    <!-- <input type="text"> -->
+</body>
+</html>

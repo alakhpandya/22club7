@@ -25,7 +25,8 @@
         font-size: 24px;
         letter-spacing: 1px;
         /* line-height: 16px; */
-        line-height: 30px;
+        /* line-height: 30px; */
+        line-height: 1.2em;
         font-style: oblique;
         /* text-transform: capitalize; */
         /* text-transform: lowercase; */
@@ -44,9 +45,12 @@
         /* 1rem = 16px by default */
         /* 1 rem means font-size of the root element */
         /* font-size: 1.5rem; */
+        /* rem = root's em(font-size) */
 
         /*  */
-        font-size: 1.5em;
+        font-size: 1.5em;  /* 30px */
+        /* font-size: 30px; */
+        /* line-height: 1.5em;  45px  */
     }
 
     #text-container2 {
@@ -59,6 +63,25 @@
         /* 1 em means the font-size of the parent element */
         font-size: 1.5em;
     }
+    button {
+        height: 2em;
+        width: 6em;
+    }
+
+    #btn1 {
+        font-size: 0.5rem;
+    }
+
+    #btn2 {
+        font-size: 2rem;
+    }
+
+    .btn-box{
+        font-size: 10px;
+    }
+    #btn3{
+        font-size: 1.8em; /* 18px */
+    }
 </style>
 
 <body>
@@ -67,12 +90,7 @@
         <p id="site-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquam cupiditate quas!
             Odit mollitia dolores consectetur nam sed itaque excepturi ut impedit similique! Maiores voluptas reiciendis
             similique maxime aperiam delectus molestiae, autem labore ea ipsam odio. Suscipit corporis ipsum vel in
-            laboriosam laborum accusamus reprehenderit perspiciatis ullam esse inventore illo sunt, atque excepturi
-            dolorum, qui earum quos, enim consequatur animi porro totam. Distinctio sed magni, quia fugit corrupti natus
-            maxime illum ratione, commodi error voluptate minima saepe in asperiores laboriosam eligendi ad quis libero.
-            Ipsam eos quasi exercitationem laudantium distinctio dolorum, repudiandae reiciendis vero ipsum fugit, ut
-            veniam ducimus similique minima! Laudantium, qui et officiis aliquid dignissimos quod! Ut laudantium, labore
-            aliquam sequi libero est corrupti. Molestias architecto numquam vel impedit ea beatae nemo maiores minima,
+            laboriosam corrupti. Molestias architecto numquam vel impedit ea beatae nemo maiores minima,
             illo soluta. Amet eligendi quas aperiam rerum qui ea, dolores eveniet modi incidunt a omnis tempora harum
             nulla ratione earum itaque corrupti possimus dolorem blanditiis deserunt quod porro nemo quibusdam
             consequatur!</p>
@@ -81,14 +99,13 @@
         <p id="site-text2">Quae neque cum distinctio delectus nisi dolores consectetur earum, voluptates beatae animi,
             dignissimos nam culpa vel a! Voluptas consectetur unde veniam laboriosam accusantium illum assumenda quae,
             corrupti nihil esse eligendi fugiat quo magnam maxime soluta in. Cupiditate obcaecati similique aut. In
-            explicabo odio sed! Odit dicta eligendi nihil, odio rem ipsam voluptatum autem pariatur. Iure cum omnis
-            velit adipisci at inventore quisquam voluptatibus? Ipsum unde excepturi similique quibusdam dolores quas
-            iste, veniam aliquam cupiditate nemo aspernatur laborum perferendis debitis consequatur ipsa consequuntur
-            animi illum aperiam culpa autem aliquid atque? Nihil id sequi earum quisquam reiciendis saepe eaque odit
-            alias ea eos, nobis similique, obcaecati enim rerum rem a maxime, dolore eligendi. Aut id quo corporis non
-            inventore eum, fuga eligendi reprehenderit ea nobis ratione distinctio, fugit nostrum! Rem, fugiat nemo!
-            Sint laborum voluptas quod accusamus porro excepturi, iusto harum nemo debitis officiis quibusdam.</p>
+            explicabo odio porro excepturi, iusto harum nemo debitis officiis quibusdam.</p>
     </div>
+    <button id="btn1">Button 1</button> <br> <br>
+    <button id="btn2">Button 2</button> <br> <br>
+    <div class="btn-box">
+        <button id="btn3">Button 3</button>
+    </div> <br> <br>
 </body>
 
 </html>

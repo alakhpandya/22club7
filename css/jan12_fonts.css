@@ -2,12 +2,24 @@
 @font-face{
     font-family: "cursive handwriting";
     src: url('/fonts/Corinthia/Corinthia-Regular.ttf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: "cursive handwriting";
+    src: url('/fonts/Corinthia/Corinthia-Bold.ttf');
+    font-weight: 700;
 }
 
 /* EDU */
 @font-face {
     font-family: beautiful-text;
-    src: url('/fonts/Edu_VIC_WA_NT_Beginner/EduVICWANTBeginner-VariableFont_wght.ttf');
+    src: url('/fonts/Edu_VIC_WA_NT_Beginner/static/EduVICWANTBeginner-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: beautiful-text;
+    src: url('/fonts/Edu_VIC_WA_NT_Beginner/static/EduVICWANTBeginner-Bold.ttf');
+    font-weight: 700;
 }
 
 /* Megrim */
