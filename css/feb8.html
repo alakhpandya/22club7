@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        text-align: center;
+    }
+    #btn1{
+        margin-right: 25px;
+    }
+    #btn2{
+        /* Margins do not Overlap in in-line elements */
+        margin-left: 25px;
+        margin-bottom: 30px;
+    }
+    #btn3{
+        /* Margins do not overlap if one of the elements is in-line */
+        border: solid;
+        width: 100px;
+        margin-top: 30px;
+        margin-bottom: 1rem;
+
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* margin: 30px auto; */
+        margin: 30px auto 1rem;
+
+        /* 
+        Margin 'auto':
+        works only in block elements
+        needs to provide width to the element
+        does not work vertically
+        */
+    }
+    #btn4{
+        margin: auto;
+    }
+    #box1{
+        border: solid;
+        margin: 1rem auto;
+    }
+
+    /* Padding */
+    #btn5{
+        margin-bottom: 1rem;
+    }
+    button{
+        padding: 0;
+    }
+    #btn5{
+        /* Equal padding all sides */
+        /* padding: 5px; */
+        
+        /* padding: top-bottom left-right */
+        /* padding: 10px 20px; */
+
+        /* Padding: clock wise */
+        /* padding: 10px 20px 30px 40px; */
+
+        /* padding: top left-right bottom */
+        /* padding: 10px 20px 30px; */
+
+        /* individual padding each side */
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    #box2{
+        border: solid;
+        padding: 20px;
+    }
+    #box3{
+        border: solid;
+        margin: 1rem 0;
+        padding: 50px;
+    }
+    #text3{
+        background-color: cornflowerblue;
+    }
+</style>
+<body>
+    <button id="btn1">Button1</button>
+    <button id="btn2">Button2</button>
+    <div id="btn3">Button3</div>
+    <button id="btn4">Button4</button>
+    <div id="box1">Box1</div>
+    <button id="btn5">Button5</button> <br>
+    <div id="box2">
+        <button id="btn6">Button6</button>
+        <button id="btn7">Button7</button>
+    </div>
+    <div id="box3">
+        <p id="text3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quisquam aliquam autem aliquid accusantium dolores incidunt, excepturi blanditiis qui odit molestiae natus repellendus tempore quis voluptatibus aspernatur beatae sint! Voluptas.</p>
+        </div>
+</body>
+</html>
+<!-- 
+    Next Class: Problem caused due to padding & its solution
+ -->
