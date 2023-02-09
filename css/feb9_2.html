@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('/jan12_fonts.css');
+
+    /* Complete CSS Reset */
+    *,
+    ::before,
+    ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+    }
+    a{
+        text-decoration: none;
+    }
+    .title {
+        font-family: beautiful-text;
+        font-weight: 700;
+    }
+
+    .site-title {
+        font-size: 2.5rem;
+        /* text-align: left;       default */
+    }
+
+    .secodary-title {
+        font-size: 2rem;
+    }
+
+    .normal-text {
+        font-family: "cursive handwriting";
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        line-height: 1.4em;
+        margin: 1.5rem 0;
+    }
+
+    .title-container {
+        background-color: olive;
+        padding: 1rem 3rem;
+    }
+    .section{
+        padding: 4rem 3rem;
+    }
+
+    .btn{
+        border: 1px solid olive;
+        background-color: olive;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-family: megrim;
+        border-radius: 5px;
+    }
+    .btn:hover{
+        background-color: beige;
+        color: #808000;
+    }
+    #first-section{
+        background-color: beige;
+        text-align: center;
+    }
+    #mid-section{
+        background-color: #274029;
+        color: white;
+        text-align: justify;
+    }
+    #last-section{
+        color: white;
+        position: relative;
+        text-align: right;
+    }
+    #last-section::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url('/photos/night_city_view.jpg') center/100vw no-repeat;
+        z-index: -1;
+        opacity: 0.6;
+    }
+</style>
+
+<body>
+    <div class="title-container">
+        <h1 class="site-title title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio molestiae placeat
+            asperiores necessitatibus!</h1>
+    </div>
+    <div class="section" id="first-section">
+        <h2 class="secodary-title title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt.</h2>
+        <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet necessitatibus debitis
+            illum reprehenderit officia facilis sunt alias. Ducimus veritatis adipisci fuga iure delectus alias dolores
+            culpa amet, reiciendis quibusdam perferendis veniam nisi illum enim laborum odio nulla assumenda quia
+            commodi placeat ut repellendus quod? Hic, reprehenderit laboriosam possimus non ullam impedit reiciendis
+            harum sunt. Deleniti voluptates nihil molestiae in iste! Officiis reprehenderit eaque quam. Fugit natus
+            incidunt nihil enim voluptas?</p>
+        <a href="" class="btn"><strong>Button 1</strong></a>
+        <a href="" class="btn"><strong>Button 2</strong></a>
+    </div>
+    <div class="section" id="mid-section">
+        <h2 class="secodary-title title">Iste soluta repellendus animi, sint accusantium sunt. Ex, provident.</h2>
+        <p class="normal-text">Delectus sunt commodi labore soluta? Saepe excepturi qui dignissimos ex aliquam assumenda
+            deserunt, ea similique officiis neque placeat tenetur, aspernatur recusandae quod. Quod consequuntur tempore
+            corporis dolor fugit inventore eaque dolorum id quas iusto blanditiis, animi aperiam debitis, temporibus
+            eveniet maxime assumenda obcaecati unde? Minus voluptates libero amet veritatis atque distinctio deleniti
+            fuga alias id nesciunt, ipsum cum omnis saepe voluptatibus doloremque aliquam quibusdam eligendi, eum, odit
+            nulla non rem?</p>
+        <a href="" class="btn"><strong>Button 3</strong></a>
+        <a href="" class="btn"><strong>Button 4</strong></a>
+    </div>
+    <div class="section" id="last-section">
+        <h2 class="secodary-title title">Tenetur, sit. In quidem, voluptatum labore officia laboriosam id.</h2>
+        <p class="normal-text">Perferendis saepe provident consequuntur ducimus tenetur vel esse repellendus beatae,
+            assumenda facere excepturi consectetur earum laudantium, fugit praesentium dignissimos sed velit aut
+            cupiditate? Magnam libero, cum natus eaque ipsum ipsa amet deleniti doloribus alias atque voluptatibus,
+            debitis, quam ratione eius dicta mollitia animi at totam voluptate voluptates rerum praesentium dolores?
+            Voluptate, ex commodi, perspiciatis suscipit architecto sunt eveniet assumenda impedit enim, eaque
+            voluptatem soluta hic accusamus neque reiciendis! Vitae, optio.</p>
+        <a href="" class="btn"><strong>Button 5</strong></a>
+        <a href="" class="btn"><strong>Button 6</strong></a>
+    </div>
+</body>
+
+</html>
