@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        border: solid red;
+        display: flex;
+        /* justify-content centers horizontally */
+        /* justify-content: center; */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+        /* padding: 0 2rem; */
+
+        /* height: 100vh; */
+        /* height: 500px; */
+
+        /* align-items centers vertically */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+
+        gap: 1rem;
+
+        /* flex-wrap: nowrap;  default */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* flex-direction: row;    default */
+        /* flex-direction: column; */
+
+        /* flex-flow is a shortcut for flex-direction & flex-wrap */
+        /* flex-flow: column wrap-reverse; */
+
+        /* justify-content & align-items will swap their roles when flex-direction is column */
+        height: 500px;
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+    }
+    .box{
+        border: blue solid;
+        /* width: 150px;
+        height: 150px; */
+
+        /* flex-basis works as width when flex-direction is row and it works as height when flex-direction is column */
+        flex-basis: 150px;
+        
+        /* margin: 0 2rem; */
+    }
+
+    #item1{
+        background-color: lightgreen;
+        /* order: 0;   default */
+        order: 1;
+    }
+    #item2{
+        /* flex-grow: 0; */
+        flex-grow: 1;
+    }
+    #item3{
+        background-color: orange;
+        flex-grow: 2;
+        order: 2;
+    }
+    #item4{
+        /* flex-shrink: 1;     default */
+        flex-shrink: 0;
+    }
+    #item5{
+        align-self: center;
+    }
+    #item6{
+        flex-shrink: 2;
+        flex-grow: 3;
+        align-self: flex-end;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="item1" class="box">Box1</div>
+        <div id="item2" class="box">Box2</div>
+        <div id="item3" class="box">Box3</div>
+        <div id="item4" class="box">Box4</div>
+        <div id="item5" class="box">Box5</div>
+        <div id="item6" class="box">Box6</div>
+    </div>
+</body>
+</html>
