@@ -1,5 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 *, ::before, ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: whitesmoke;
+}
+.text-light{
+    color: gray;
+}
+.striked{
+    text-decoration: line-through;
+}
+
+
+.card{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.card-upper{
+    /* background-color: lightpink; */
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product-img{
+    height: 200px;
+}
+
+.best-seller, .heart-icon, .ratings-container{
+    position: absolute;
+}
+.heart-icon{
+    bottom: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.ratings-container{
+    bottom: 15px;
+    left: 15px;
+    background-color: aliceblue;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 15px;
+}
+.best-seller{
+    top: 15px;
+    left: 15px;
+}
+
+.card-lower{
+    background-color: aliceblue;
+    height: 125px;
+    padding: 0.5rem 1rem;
+}
+.product-name{
+    font-size: 1.3rem;
+}
+
+
+.offer{
+    position: absolute;
 }
