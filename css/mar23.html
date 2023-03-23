@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --yourColor: rgb(149, 6, 6);
+    }
+    body {
+        padding-top: 1rem;
+    }
+
+    .boxes {
+        border: solid blue;
+        height: 50px;
+        width: 100px;
+    }
+
+    a {
+        text-decoration: none;
+        border: solid red;
+    }
+
+    #box1 {
+        display: inline;
+        padding: 1rem;
+        /* text-decoration: underline; */
+        /* text-decoration: overline; */
+        /* text-decoration: line-through; */
+        text-decoration: none;
+        background-color: var(--yourColor);
+    }
+
+    #btn2 {
+        display: block;
+        margin: 1rem 0;
+        width: 100px;
+        margin: auto;
+    }
+
+    #btn3 {
+        display: inline-block;
+        width: 100px;
+        /* margin: auto will not work here */
+        margin-bottom: 2rem;
+        cursor: pointer;
+        background-color: var(--myColor);
+        font-family: var(--myFont);
+    }
+
+    input {
+        border: none;
+        /* background-color: beige; */
+        background-color: var(--myColor);
+        border: solid 4px;
+        outline: solid red 4px;
+        border-radius: 10px;
+        font-family: var(--myFont);
+    }
+
+    input:focus {
+        outline: solid blue 2px;
+    }
+
+    ul {
+        /* list-style: none; */
+        list-style-type: none;
+    }
+
+    #btn4 {
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    /* Creating variables in css */
+    .container{
+        --myColor : #abcdef;
+        --myFont: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    li{
+        color: var(--myColor);
+    }
+</style>
+
+<body>
+    <div class="boxes" id="box1">Box 1</div>
+    <a id="btn1">Button 1</a>
+    <a id="btn2">Button 2</a>
+    <a id="btn3">Button 3</a>
+    <a id="btn4">Button 4</a>
+    <a id="btn5">Button 5</a>
+    <div class="container">
+        <form action="">
+            <div>
+                <input type="text" name="" id="">
+            </div>
+        </form>
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Obcaecati, exercitationem dicta.</li>
+            <li>Perferendis, maiores laudantium.</li>
+            <li>Ea, aspernatur nostrum?</li>
+        </ul>
+    </div>
+</body>
+
+</html>

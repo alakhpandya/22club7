@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Lato', sans-serif;
-    background-color: whitesmoke;
+    background-color: black;
 }
 .text-light{
     color: gray;
@@ -24,6 +24,8 @@ body{
     height: 400px;
     margin: 2rem;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
 .card-upper{
@@ -67,9 +69,53 @@ body{
 }
 .product-name{
     font-size: 1.3rem;
+    margin-top: 15px;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.colors-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
+.color{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+#color1{
+    background-color: orangered;
+}
+#color2{
+    background-color: blue;
+}
+#color3{
+    background-color: green;
+}
 
+.price-container{
+    font-size: 1.2rem;
+}
+.price-container .mrp{
+    font-weight: 500;
+}
 .offer{
     position: absolute;
+    background-color: red;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 1.2rem;
+    /* padding-left: 10px;
+    padding-top: 20px; */
+    text-align: center;
+    padding-top: 13px;
+    top: -10px;
+    right: -10px;
 }
