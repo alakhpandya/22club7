@@ -31,7 +31,7 @@
             </ul>
         </div>
         <ul class="right flex-row">
-            <li id="browse"><a href="#">
+            <li onclick="document.querySelector('.nav-menu').classList.toggle('nav-show-hide')" id="browse"><a href="#">
                 Browse
                 &nbsp;<i class="fa-solid fa-caret-down drop-down-arrow"></i>
             </a></li>
@@ -47,6 +47,28 @@
             <li><a href="#">
                 <i class="fa-regular fa-user"></i>
                 &nbsp;<i class="fa-solid fa-caret-down drop-down-arrow"></i>
+            </a></li>
+        </ul>
+        <i class="fa-solid fa-bars bar-icon"></i>
+        <ul class="nav-mobile">
+            <li class="nav-mobile-item" onclick="document.querySelector('.nav-menu').classList.toggle('nav-show-hide')" id="browse"><a href="#">
+                Browse
+                &nbsp;<i class="fa-solid fa-caret-right drop-down-arrow"></i>
+            </a></li>
+            <li class="nav-mobile-item"><a class="" href="#">Try for free</a></li>
+            <li class="nav-mobile-item"><a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                &nbsp;Search
+            </a></li>
+            <li class="nav-mobile-item"><a href="#">
+                <i class="fa-solid fa-globe"></i>
+                &nbsp;Language
+                &nbsp;<i class="fa-solid fa-caret-right drop-down-arrow"></i>
+            </a></li>
+            <li class="nav-mobile-item"><a href="#">
+                <i class="fa-regular fa-user"></i>
+                &nbsp;&nbsp;Login
+                &nbsp;<i class="fa-solid fa-caret-right drop-down-arrow"></i>
             </a></li>
         </ul>
     </nav>

@@ -54,6 +54,17 @@ nav .dropdown{
     font-weight: 500;
 }
 
+.bar-icon{
+    color: white;
+    font-size: 1.3rem;
+    display: none;
+}
+.nav-mobile{
+    display: none;
+}
+
+
+
 @media (max-width: 1000px){
     .nav-menu{
         background-color: #252E39;
@@ -64,6 +75,11 @@ nav .dropdown{
         width: 100%;
         align-items: flex-start;
         padding: 20px 0px;
+        display: none;
+        height: 18rem;
+    }
+    .nav-show-hide{
+        display: flex;
     }
     .nav-menu li{
         border-bottom: 1px solid #323e4c;
@@ -76,5 +92,32 @@ nav .dropdown{
     }
     #browse{
         display: block;
+    }
+}
+
+@media (max-width: 650px){
+    .bar-icon{
+        display: block;
+    }
+    .right{
+        display: none;
+    }
+    .nav-mobile{
+        position: absolute;
+        display: block;
+        background-color: #252E39;
+        top: 5rem;
+        left: 0;
+        padding: 20px 40px;
+        width: 100%;
+        z-index: 1;
+        height: 18rem;
+    }
+    .nav-mobile-item{
+        margin-bottom: 1.5rem;
+    }
+    .nav-menu{
+        left: 30%;
+        z-index: 2;
     }
 }
