@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Raleway:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --normal-fonts: 'Raleway', sans-serif;
+    --title-fonts: 'Alkatra', cursive;
+    --black: black;
+    --color-dark1: #123456;
+    --color-dark2: #476288;
+    --color-light1: #DDF2FF;
+    --color-ligth2: #DCA11D;
+    --white: white;
+}
+
+body{
+    background-color: var(--color-light1);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+.navbar{
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+}
+.expand{
+    height: 12.7rem;
+}
+.navbar .upper{
+    background-color: var(--color-dark1);
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-logo{
+    height: 4rem;
+}
+.navbar .bar-icon{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+.navbar .lower{
+    background-color: var(--color-dark2);
+    padding: 20px;
+}
+.nav-links{
+    color: var(--color-ligth2);
+    font-size: 1.3rem;
+    font-family: var(--normal-fonts);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.navbar .seperator{
+    height: 1px;
+    background-color: var(--color-light1);
+    margin: 1rem 0;
+}
+
+
+
+
+
+/* Media Queries */
+/* @media screen (){ */
+/* @media all (){ */
+@media (min-width: 768px){
+    .navbar .bar-icon{
+        display: none;
+    }
+    .navbar .lower{
+        background-color: var(--color-dark1);
+        padding: 0;
+        position: absolute;
+        top: 1.6rem;
+        right: 20px;
+        display: flex;
+        gap: 2rem;
+    }
+    .navbar .seperator{
+        display: none;
+    }
+    .nav-links:hover{
+        color: var(--white);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
