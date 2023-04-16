@@ -75,15 +75,16 @@ ul{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--color-dark1);
-    width: 90%;
-    padding: 2rem 1.5rem 1.5rem;
+    width: 95%;
+    max-width: 500px;
+    padding: 2rem 1rem 1rem;
     border-radius: 20px;
 }
 form{
     border: var(--color-light1) solid;
     border-radius: 20px;
     color: var(--color-light1);
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem;
     position: relative;
 }
 .form-title{
@@ -100,7 +101,7 @@ form{
     margin-bottom: 1rem;
     position: relative;
 }
-.input-box input{
+.input-box input, .input-box select{
     width: 100%;
     height: 3rem;
     background-color: var(--color-dark1);
@@ -111,7 +112,7 @@ form{
     font-size: 1.4rem;
     padding-left: 20px;
 }
-.input-box input:focus{
+.input-box input:focus, .input-box input:valid, .input-box select:focus, .input-box select:valid{
     border: 1px solid var(--color-light1);
     border-radius: 10px;
 }
@@ -122,7 +123,8 @@ form{
     transform: translateY(-50%);
     transition: 0.5s;
 }
-.input-box input:focus + .placeholders{
+.input-box input:focus + .placeholders, .input-box input:valid + .placeholders,
+.input-box select:focus + .placeholders, .input-box select:valid + .placeholders{
     top: 0;
     left: 10px;
     transform: translateY(-50%);
@@ -130,9 +132,76 @@ form{
     padding: 0 2px;
 }
 
+
+.remember-me-fgt-pwd-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+#remember-me{
+    
+}
+.forgot-password-link{
+    color: var(--color-ligth2);
+}
+
+.submit-box{
+    /* border: red solid; */
+    margin: 1.5rem 0;
+}
+.submit-btn{
+    width: 100%;
+    border: none;
+    background-color: var(--color-light1);
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: solid var(--color-light1);
+}
+.submit-btn:hover{
+    background-color: var(--color-dark1);
+    color: var(--color-light1);
+}
+.new-old-user-box{
+    text-align: right;
+}
+.login-signup-link{
+    color: var(--color-ligth2);
+}
+
+/* Sign up Form */
+.qualification-options{
+    font-size: 0.8rem;
+}
+.gender-box{
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tnc-checkbox{
+    margin-bottom: 0.5rem;
+}
+
 /* Media Queries */
 /* @media screen (){ */
 /* @media all (){ */
+@media (min-width: 375px){
+    .form-container{
+        width: 95%;
+        padding: 2rem 1.5rem 1.5rem;
+    }
+    form{
+        padding: 2rem 1.5rem;
+    }
+    .remember-me-fgt-pwd-container{
+        flex-direction: row;
+    }
+}
+
 @media (min-width: 768px){
     .navbar .bar-icon{
         display: none;
