@@ -1,0 +1,7 @@
+abel: nav-links-400, banner text-700, carousel-text, blog-post-sticker, popular-tags
+
+lexend: nav-logo-400, banner-title-700, sidebar-titles, blog-post-text, pagination, all over footer,
+
+livvic: banner-btn, carousel-btn, all buttons
+
+Anton: blog-post-headline, popular-post-headline
