@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Cutom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>Document</title>
 </head>
+<style>
+    .form-container{
+        top: 55%;
+        max-width: 750px;
+    }
+</style>
 <body>
     <div class="navbar">
         <div class="upper">
             <a href="index.html"><img class="nav-logo" src="/images/logo_royal.png" alt=""></a>
-            <i onclick="document.querySelector('.navbar').classList.toggle('expand')" class="fa-solid fa-bars bar-icon"></i>
+            <i onclick="document.querySelector('.navbar').classList.toggle('expand')"
+                class="fa-solid fa-bars bar-icon"></i>
         </div>
         <ul class="lower">
             <li><a class="nav-links" href="login.html">Login</a></li>
@@ -25,37 +35,43 @@
             <li><a class="nav-links" href="signup.html">Signup</a></li>
         </ul>
     </div>
-    
+
     <div class="form-container">
         <form action="">
             <p class="form-title">Sign Up</p>
-            <div class="input-box">
-                <input type="text" name="" id="" required>
-                <label class="placeholders" for="">First Name</label> 
-            </div>
-            <div class="input-box">
-                <input type="text" name="" id="" required>
-                <label class="placeholders" for="">Mobile No</label> 
-            </div>
-            <div class="input-box">
-                <select name="" id="" required>
-                    <option class="qualification-options" value=""></option>
-                    <option class="qualification-options" value="">Priary School Student</option>
-                    <option class="qualification-options" value="">Secondary School Student</option>
-                </select>
-                <label class="placeholders" for="">Qualification</label> 
-            </div>
-            <div class="input-box">
-                <input type="text" name="" id="" required>
-                <label class="placeholders" for="">E-mail</label> 
-            </div>
-            <div class="input-box">
-                <input type="password" name="" id="" required>
-                <label class="placeholders" for="">Password</label>
-            </div>
-            <div class="input-box">
-                <input type="password" name="" id="" required>
-                <label class="placeholders" for="">Confirm Password</label>
+            <div class="signup-info">
+                <div>
+                    <div class="input-box">
+                        <input type="text" name="" id="" required>
+                        <label class="placeholders" for="">First Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="" id="" required>
+                        <label class="placeholders" for="">Mobile No</label>
+                    </div>
+                    <div class="input-box">
+                        <select name="" id="" required>
+                            <option class="qualification-options" value=""></option>
+                            <option class="qualification-options" value="">Priary School Student</option>
+                            <option class="qualification-options" value="">Secondary School Student</option>
+                        </select>
+                        <label class="placeholders" for="">Qualification</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="input-box">
+                        <input type="text" name="" id="" required>
+                        <label class="placeholders" for="">E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="" id="" required>
+                        <label class="placeholders" for="">Password</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="" id="" required>
+                        <label class="placeholders" for="">Confirm Password</label>
+                    </div>
+                </div>
             </div>
             <div class="gender-box">
                 <div><input type="radio" name="gender" id="female"> <label for="female">Female</label></div>
@@ -63,8 +79,10 @@
                 <div><input type="radio" name="gender" id="others"> <label for="others">Others</label></div>
             </div>
             <div class="tnc-box">
-                <div class="tnc-checkbox"><input type="checkbox" required name="" id="tnc"> <label for="tnc">I agree to terms of use.</label></div>
-                <div><input type="checkbox" checked name="" id="tnc"> <label for="tnc">Please send me notifications.</label></div>
+                <div class="tnc-checkbox"><input type="checkbox" required name="" id="tnc"> <label for="tnc">I agree to
+                        terms of use.</label></div>
+                <div><input type="checkbox" checked name="" id="tnc"> <label for="tnc">Please send me
+                        notifications.</label></div>
             </div>
             <div class="submit-box">
                 <input class="submit-btn" type="submit" value="Register">
@@ -76,4 +94,5 @@
     </div>
 
 </body>
+
 </html>

@@ -14,7 +14,7 @@
     --color-dark2: #476288;
     --color-light1: #DDF2FF;
     --color-ligth2: #DCA11D;
-    --white: white;
+    --white: white; 
 }
 
 body{
@@ -220,6 +220,15 @@ form{
     }
     .nav-links:hover{
         color: var(--white);
+    }
+
+    .signup-info{
+        display: flex;
+        gap: 2rem;
+    }
+    .gender-box{
+        flex-direction: row;
+        gap: 1.5rem;
     }
 }
 
