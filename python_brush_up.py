@@ -65,7 +65,56 @@ printHello = lambda : "Hello"
 
 lambda : [[int(input()) for j in range(3)] for i in range(3)]
 
+
+# Use the fact() function written below & the list 'numbers' and create another list 'factorials' which is having factorial of each memeber of 'numbers'
+"""
+def fact(n):
+    t = 1
+    for i in range(1, n+1):
+        t = t * i
+    return t
+
 numbers = [8, 5, 3, 9, 10, 6, 4, 5]
 
+factorials = map(fact, numbers)
+# factorials = list(map(fact, numbers))
 
-# remaining topics: map, filter, reduce, functools, call back functions
+# print(factorials)
+
+# for x in factorials:
+#     print(x)
+"""
+
+# Do not change this:
+"""
+def average(temperature_data):
+    return sum(temperature_data)/len(temperature_data)
+
+def aboveAverage(x):
+    return x > avg
+
+temperatures = [-40, -30, -35, -30, -38, -10, -4, 0, -37, 2, -3]
+avg = average(temperatures)
+"""
+# Use the function aboveAverage() and the list of temperatures to create another list of 'above_average_temperature_points' which consists of temperatures those are higher than the average temperature.
+
+# Write your code from here:
+"""
+above_average_temperature_points = []
+for i in temperatures:
+    if aboveAverage(i):
+        above_average_temperature_points.append(i)
+"""
+"""
+above_average_temperature_points = filter(aboveAverage, temperatures)
+
+print(above_average_temperature_points)
+
+print(list(above_average_temperature_points))
+
+
+# lambda functions as anonymous functions (in-line functions)
+above_average_temperature_points = filter(lambda x : x > avg, temperatures)
+"""
+
+# remaining topics: reduce, functools, call back functions, lrucache
