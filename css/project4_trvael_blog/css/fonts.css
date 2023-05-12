@@ -1,0 +1,28 @@
+/* Abel */
+@font-face{
+    font-family: 'Royal Tours Basic Font';
+    src: url('/fonts/Abel/Abel-Regular.ttf');
+}
+
+/* Lexend Deca */
+@font-face{
+    font-family: 'Royal Tours Title Font';
+    src: url('/fonts/Lexend_Deca/static/LexendDeca-Regular.ttf');
+}
+@font-face{
+    font-family: 'Royal Tours Title Font';
+    src: url('/fonts/Lexend_Deca/static/LexendDeca-Bold.ttf');
+    font-weight: 700;
+}
+
+/* Livvic */
+@font-face {
+    font-family: 'Royal Tours Button Font';
+    src: url('/fonts/Livvic/Livvic-Regular.ttf');
+}
+
+/* Anton */
+@font-face {
+    font-family: "Royal Tours Headline Font";
+    src: url('/fonts/Anton/Anton-Regular.ttf');
+}

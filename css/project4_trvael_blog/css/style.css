@@ -1,0 +1,10 @@
+@import url('/css/fonts.css');
+
+:root{
+    --primaryFonts : 'Royal Tours Basic Font', sans-serif;
+    --titleFonts : 'Royal Tours Title Font', cursive;
+    --btnFonts: 'Royal Tours Button Font', monospace;
+    --headlineFonts: "Royal Tours Headline Font", 'Courier New';
+
+    /* Colors */
+}
