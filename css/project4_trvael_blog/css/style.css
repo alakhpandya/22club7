@@ -7,4 +7,85 @@
     --headlineFonts: "Royal Tours Headline Font", 'Courier New';
 
     /* Colors */
+    --textDark: #3f4954;
+    --textLight: #686666da;
+
+    --black: #000;
+    --darkColor1: #0f0f0f;
+    --darkColor2: #104f55;
+    --lightColor1: #a1c4cf;
+    --white: #FFF;
+
+    --gradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)
+
+}
+
+/* ---------------------- CSS Reset ---------------------- */
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------- Global Styling ---------------------- */
+body{
+    font-family: var(--primaryFonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+
+/* ---------------------- Utility Classes ---------------------- */
+.flex-vertical-center{
+    display: flex;
+    align-items: center;
+}
+
+/* ---------------------- Navbar ---------------------- */
+nav{
+    background-color: var(--lightColor1);
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 0 30px;
+}
+.nav-expand{
+    height: 32rem;
+}
+
+.nav-upper{
+    height: 5rem;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.nav-logo{
+    font-family: var(--titleFonts);
+    color: var(--textDark);
+}
+
+.nav-menu{
+    padding-left: 3rem;
+}
+.nav-menu li{
+    padding: 1.5rem 0;
+}
+.nav-link{
+    color: var(--textDark);
+    font-size: 1.2rem;
+}
+
+.social{
+    margin-top: 1.5rem;
+}
+.social-links{
+    margin-right: 10px;
+}
+.social-icon{
+    font-size: 1.3rem;
+    color: var(--textDark);
 }
