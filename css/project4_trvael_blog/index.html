@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -22,25 +26,36 @@
         <nav>
             <div class="nav-upper flex-vertical-center">
                 <a class="nav-logo" href="index.html">Royal Tours</a>
-                <i onclick="document.querySelector('nav').classList.toggle('nav-expand')" class="fa-solid fa-bars bar-icon"></i>
+                <i onclick="document.querySelector('nav').classList.toggle('nav-expand')"
+                    class="fa-solid fa-bars bar-icon"></i>
             </div>
-            <div class="nav-lower">
-                <ul class="nav-menu">
-                    <li><a href="#" class="nav-link">Home</a></li>
-                    <li><a href="#" class="nav-link">Category</a></li>
-                    <li><a href="#" class="nav-link">Archive</a></li>
-                    <li><a href="#" class="nav-link">Pages</a></li>
-                    <li><a href="#" class="nav-link">Contact Us</a></li>
-                </ul>
-                <div class="social">
-                    <a class="social-links" href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
-                    <a class="social-links" href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
-                    <a class="social-links" href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
-                    <a class="social-links" href="#"><i class="fa-brands fa-youtube social-icon"></i></a>
-                </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Category</a></li>
+                <li><a href="#" class="nav-link">Archive</a></li>
+                <li><a href="#" class="nav-link">Pages</a></li>
+                <li><a href="#" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="social">
+                <a class="social-links" href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+                <a class="social-links" href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
+                <a class="social-links" href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+                <a class="social-links" href="#"><i class="fa-brands fa-youtube social-icon"></i></a>
             </div>
         </nav>
-        <div>Banner</div>
+        <div class="banner">
+            <img class="banner-bg-img" src="/assets/pexels-deva-darshan.jpg" alt="">
+            <svg class="svg-wave" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,0L60,48C120,96,240,192,360,234.7C480,277,600,267,720,229.3C840,192,960,128,1080,117.3C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+            <div class="banner-text">
+                <h3 class="banner-title">Tours & Travels</h3>
+                <h4 class="banner-headline">Amazing Place On Earth</h4>
+                <a href="#" class="btn rounded-btn banner-btn">Explore</a>
+            </div>
+        </div>
         <div>Carousel</div>
     </header>
     <main>
@@ -56,6 +71,8 @@
 
     </footer>
 </body>
+<script src="/js/jQuery3_7_0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/js/main.js"></script>
 
 </html>
