@@ -7,16 +7,16 @@ $('.owl-carousel').owlCarousel({
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     navContainer: `${'.owl-nav'}`,
-    navText: ['<i class="fa-solid fa-arrow-left-long arrow-icon"></i>','<i class="fa-solid fa-arrow-right-long arrow-icon"></i>'],
+    navText: ['<i class="fa-solid fa-arrow-left-long"></i>','<i class="fa-solid fa-arrow-right-long"></i>'],
     responsive:{
         0:{
-            items:1
+            items:1 
         },
-        600:{
+        750:{
+            items:2
+        },
+        1000:{
             items:3
         }
-        // 1000:{
-        //     items:5
-        // }
     }
 })
