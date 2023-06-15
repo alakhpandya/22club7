@@ -133,10 +133,11 @@ nav{
     z-index: 2;
 }
 .banner-text{
-    position: absolute;
+    /* position: absolute;
     top: 25%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    margin: 10rem auto 0;
     text-align: center;
     color: var(--white);
     width: 90%;
@@ -200,8 +201,10 @@ main{
     width: 85%;
     margin: auto;
 }
-.blog-img-container{
+.blog-top-container{
     position: relative;
+}
+.blog-img-container{
     overflow: hidden;
 }
 .blog-post-sticker{
@@ -210,6 +213,7 @@ main{
     left: 0;
     background: var(--gradient);
     padding: 0.5rem 1rem;
+    white-space: nowrap;
 }
 .blog-img{
     width: 100%;
@@ -255,7 +259,7 @@ main{
     font-size: 1.5rem;
     cursor: pointer;
 }
-
+ 
 /* ---------------------- Sidebar ---------------------- */
 .siderbar-items{
     width: 90%;
@@ -312,6 +316,19 @@ main{
     border: none;
 }
 
+/* ---------------------- Popular Tags ---------------------- */
+.popular-tag-container{
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+}
+.popular-tag{
+    padding: 0.4rem 0.8rem;
+    font-family: var(--primaryFonts);
+    font-size: 1.1rem;
+}
+
+
 /* ---------------------- Midea Queries ---------------------- */
 @media (min-width: 750px){
     nav{
@@ -341,4 +358,15 @@ main{
         height: 100%;
         width: 100%;
     }
+    main{
+        grid-template-columns: 70% 30%;
+    }
+    .blog-post-sticker{
+        bottom: 5px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        padding: 0.5rem 1rem;
+        border-radius: 1.5rem;
+    }
+    
 }
